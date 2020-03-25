@@ -7,13 +7,13 @@
     />
   </head>
   <body>
- <style type='text/css'>
+<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #008982;
+		background-color: #172f75;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #008982;
+		outline: 1px solid #172f75;
 	}
 </style>
 
@@ -21,9 +21,8 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'en';
-		embedded_svc.settings.smallCompanyLogoImgURL = "https://business.carphonewarehouse.com/assets/images/logos/cpwb-logo-no-slogan.png"
-		
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
@@ -47,13 +46,13 @@
 			'https://cpwbusiness.force.com',
 			gslbBaseURL,
 			'00D20000000nIBU',
-			'Mobile_Sales_Chat_Deployment',
+			'Mixed_Electrics_Sales_Chat_Deployment',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1-frf.salesforceliveagent.com/content',
 				deploymentId: '5720J000000XZLV',
 				buttonId: '5730J000000XZNH',
 				baseLiveAgentURL: 'https://d.la1-c1-frf.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0J000000blJdUAI_1711207b0f9',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0J000000blJYUAY_1710d33e629',
 				isOfflineSupportEnabled: false
 			}
 		);

@@ -25,10 +25,10 @@
 		embedded_svc.settings.language = 'en';
 		embedded_svc.settings.storageDomain = 'finndelin.github.io'; 
 		embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			if (prechatFormData[3].value === "Place an order or help with placing an order")
-                            return "2F5730J000000XZNH";
-                        else {
+			if (prechatFormData[3].value === "Discuss an order or track a delivery")
                             return "2F5730J000000XZNM";
+                        else {
+                            return "2F5730J000000XZNH";
                         }
                     };
 

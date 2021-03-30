@@ -11,52 +11,64 @@
 	  <!-- Return Form-->
 	  
 	  <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+	<!--  If necessary, please modify the charset parameter to specify the        -->
+	<!--  character set of your HTML page.                                        -->
+	<!--  ----------------------------------------------------------------------  -->
+	
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: Please add the following <FORM> element to your page.             -->
+	<!--  ----------------------------------------------------------------------  -->
+	
+	<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	
+	<input type=hidden name="orgid" value="00D20000000nIBU">
+	<input type=hidden name="retURL" value="https://business.currys.co.uk/my-account/book-a-return/returns-success.jtp">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+	
+	<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+	
+	<label for="phone">Telephone Number</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+	
+	<label for="email">Email Address</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+	
+	Account Number:<input  id="00N0J000003xYLz" maxlength="20" name="00N0J000003xYLz" size="20" type="text" /><br>
+	
+	Order Number (8 digits):<input  id="00N0J000003xlJN" maxlength="15" name="00N0J000003xlJN" size="20" type="text" /><br>
+	
+	<label for="subject">Product Code or description</label><input  id="subject" maxlength="60" name="subject" size="20" type="text" /><br>
+	
+	<label for="reason">Reason for return</label><select  id="reason" name="reason">
+	<option value="Product damaged">Product damaged</option>
+	<option value="Incorrect Quantity">Incorrect Quantity</option>
+	<option value="Product Faulty">Product Faulty</option>
+	<option value="Wrong Product">Wrong Product</option>
+	</select><br>
+	
+	<label for="description">Additional return information</label><textarea name="description"></textarea><br>
+	
+	Preferred collection date:<span class="dateInput dateOnlyInput"><input  id="00N6M00000AUKeH" name="00N6M00000AUKeH" size="12" type="text" /></span><br>
+	
+	Address Line 1/Company Name:<textarea  id="00N6M00000AULPc" name="00N6M00000AULPc" type="text" wrap="soft"></textarea><br>
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+Address Line 2:<textarea  id="00N6M00000AULPh" name="00N6M00000AULPh" type="text" wrap="soft"></textarea><br>
 
-<input type=hidden name="orgid" value="00D20000000nIBU">
-<input type=hidden name="retURL" value="https://business.currys.co.uk/my-account/book-a-return/returns-success.jtp">
+Town:<textarea  id="00N6M00000AULPm" name="00N6M00000AULPm" type="text" wrap="soft"></textarea><br>
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+County:<textarea  id="00N6M00000AULPr" name="00N6M00000AULPr" type="text" wrap="soft"></textarea><br>
 
-<label for="phone">Telephone Number</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+Postcode:<textarea  id="00N6M00000AULPw" name="00N6M00000AULPw" type="text" wrap="soft"></textarea><br>
+	
+	<input type=hidden name="recordType" id="recordType" value="0120J000000Yh8n">
+	
+	<input type="submit" name="submit">
+	
+	</form>
 
-<label for="email">Email Address</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-Account Number:<input  id="00N0J000003xYLz" maxlength="20" name="00N0J000003xYLz" size="20" type="text" /><br>
-
-Order Number (8 digits):<input  id="00N0J000003xlJN" maxlength="15" name="00N0J000003xlJN" size="20" type="text" /><br>
-
-<label for="subject">Product Code or description</label><input  id="subject" maxlength="60" name="subject" size="20" type="text" /><br>
-
-<label for="reason">Reason for return</label><select  id="reason" name="reason">
-<option value="Product damaged">Product damaged</option>
-<option value="Incorrect Quantity">Incorrect Quantity</option>
-<option value="Product Faulty">Product Faulty</option>
-<option value="Wrong Product">Wrong Product</option>
-</select><br>
-
-<label for="description">Additional return information</label><textarea name="description"></textarea><br>
-
-Preferred collection date:<span class="dateInput dateOnlyInput"><input  id="00N6M00000AUKeH" name="00N6M00000AUKeH" size="12" type="text" /></span><br>
-
-Collection Address:<textarea  id="00N6M00000AUKeM" name="00N6M00000AUKeM" rows="5" type="text" wrap="soft"></textarea><br>
-
-<input type=hidden name="recordType" id="recordType" value="0120J000000Yh8n">
-
-<input type="submit" name="submit">
-
-</form>
 
 	  
 	  

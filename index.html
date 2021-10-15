@@ -9,17 +9,13 @@
   </head>
   <body>
 	  
-	  <!--  ----------------------------------------------------------------------  -->
+<!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
 <!--  ----------------------------------------------------------------------  -->
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -27,7 +23,6 @@
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"Currys_Business_Referral_Form","fallback":"true","orgId":"00D20000000nIBU","ts":""}'>
 <input type=hidden name="oid" value="00D20000000nIBU">
 <input type=hidden name="retURL" value="https://business.currys.co.uk/customer-services/contact/contact-success.jtp">
 
@@ -55,88 +50,22 @@
 
 <label for="zip">Postcode</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
 
+Connections Required:<input  id="00N6M00000ANGeV" name="00N6M00000ANGeV" size="20" type="text" /><br>
+
 Notes:<textarea  placeholder="Additional information e.g. How much data is required, budget, preferrered network, preferred device etc" id="00N200000080RAK" name="00N200000080RAK" rows="6" type="text" wrap="soft"></textarea><br>
 
 <input type=hidden name="lead_source" id="lead_source" value="SIS">
 
-<label for="emailOptOut">Email Opt Out</label><input  id="emailOptOut" name="emailOptOut" type="checkbox" value="1" /><br>
+<label for="emailOptOut">*Marketing Consent Message required*</label><input  id="emailOptOut" name="emailOptOut" type="checkbox" value="1" /><br>
 
 Store Number:<input  id="00N20000009AdUa" maxlength="25" name="00N20000009AdUa" size="20" type="text" /><br>
 
-Colleague Payroll:<input  id="00N0J000003rQSA" maxlength="10" name="00N0J000003rQSA" size="20" type="text" /><br>
+Payroll Number:<input  id="00N0J000003rQSA" maxlength="10" name="00N0J000003rQSA" size="20" type="text" /><br>
 
-<div class="g-recaptcha" data-sitekey="6LdjgykaAAAAANWs64lQJba8mFbjE9SAUQpwVgdP"></div><br>
 <input type="submit" name="submit">
 
 </form>
-	  
-	  <!-- Return Form-->
-	  
-	  <!--  ----------------------------------------------------------------------  -->
-	<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-	<!--  If necessary, please modify the charset parameter to specify the        -->
-	<!--  character set of your HTML page.                                        -->
-	<!--  ----------------------------------------------------------------------  -->
-	
-	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-	
-	<!--  ----------------------------------------------------------------------  -->
-	<!--  NOTE: Please add the following <FORM> element to your page.             -->
-	<!--  ----------------------------------------------------------------------  -->
-	
-	<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-
-	
-	<input type=hidden name="orgid" value="00D20000000nIBU">
-	<input type=hidden name="retURL" value="https://business.currys.co.uk/my-account/book-a-return/returns-success.jtp">
-
-	
-	<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-	
-	<label for="phone">Telephone Number</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-	
-	<label for="email">Email Address</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-	
-	Account Number:<input  id="00N0J000003xYLz" maxlength="20" name="00N0J000003xYLz" size="20" type="text" /><br>
-	
-	Order Number (8 digits):<input  id="00N0J000003xlJN" maxlength="15" name="00N0J000003xlJN" size="20" type="text" /><br>
-	
-	<label for="subject">Product Code or description</label><input  id="subject" maxlength="60" name="subject" size="20" type="text" /><br>
-	
-	<label for="reason">Reason for return</label><select  id="reason" name="reason">
-	<option value="Product damaged">Product damaged</option>
-	<option value="Incorrect Quantity">Incorrect Quantity</option>
-	<option value="Product Faulty">Product Faulty</option>
-	<option value="Wrong Product">Wrong Product</option>
-	</select><br>
-	
-	<label for="description">Additional return information</label><textarea name="description"></textarea><br>
-	
-	Preferred collection date:<span class="dateInput dateOnlyInput"><input  id="00N6M00000AUKeH" name="00N6M00000AUKeH" size="12" type="text" /></span><br>
-	
-	Address Line 1/Company Name:<textarea  id="00N6M00000AULPc" name="00N6M00000AULPc" type="text" wrap="soft"></textarea><br>
-
-Address Line 2:<textarea  id="00N6M00000AULPh" name="00N6M00000AULPh" type="text" wrap="soft"></textarea><br>
-
-Town:<textarea  id="00N6M00000AULPm" name="00N6M00000AULPm" type="text" wrap="soft"></textarea><br>
-
-County:<textarea  id="00N6M00000AULPr" name="00N6M00000AULPr" type="text" wrap="soft"></textarea><br>
-
-Postcode:<textarea  id="00N6M00000AULPw" name="00N6M00000AULPw" type="text" wrap="soft"></textarea><br>
-	
-	<input type=hidden name="recordType" id="recordType" value="0120J000000Yh8n">
-	
-	<input type="submit" name="submit">
-	
-	</form>
-
-
-
-	  
-	  
-	  
-	  
-	  
+	  	  
 	  <!-- Chat Button-->
 		  
 	 <style type='text/css'>
